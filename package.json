@@ -1,6 +1,6 @@
 {
-  "name": "message-cipher",
-  "version": "1.0.0",
+  "name": "rudal-cipher-toolkit",
+  "version": "1.0.1",
   "description": "A package for encrypting and decrypting messages using a Vigenère cipher variant.",
   "main": "index.js",
   "scripts": {
@@ -18,13 +18,13 @@
     "encryption",
     "decryption"
   ],
-  "author": "Your Name",
+  "author": "Rudal Kunwar",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rudalkunwar/rudal-cipher-toolkit/issues"
   },
   "homepage": "https://github.com/rudalkunwar/rudal-cipher-toolkit#readme",
   "dependencies": {
-    "prompt-async": "^1.0.0"
+  
   }
 }
