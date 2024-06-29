@@ -21,14 +21,17 @@ Install the package using npm:
 
 ```sh
 npm install rudal-cipher-toolkit
+```
 
+## Usage
 
-Usage
------
+---
 
 ### Encoding a Message
+
 To encode a message using the toolkit:
 
+```sh
 const { encode_message } = require('rudal-cipher-toolkit');
 try {
   const encodedMessage = encode_message({ message: 'hello world', secretKey: 'key' });
@@ -36,11 +39,13 @@ try {
 } catch (error) {
   console.error(error.message);
 }
-
+```
 
 ### Decoding a Message
+
 To decode a message using the toolkit:
 
+```sh
 const { encode_message } = require('rudal-cipher-toolkit');
 try {
   const encodedMessage = encode_message({ message: 'hello world', secretKey: 'key' });
@@ -48,33 +53,37 @@ try {
 } catch (error) {
   console.error(error.message);
 }
+```
 
+## API
 
-API
 ---
+
 ### encode_message
 
-* Parameters:
-	+ `options` (Object): An object containing the following properties:
-		- `message` (string): The message to be encoded.
-		- `secretKey` (string): The secret key used for encoding.
-* Returns:
-	+ `string`: The encoded message.
+- Parameters:
+  - `options` (Object): An object containing the following properties:
+    - `message` (string): The message to be encoded.
+    - `secretKey` (string): The secret key used for encoding.
+- Returns:
+  - `string`: The encoded message.
 
 ### decode_message
 
-* Parameters:
-	+ `options` (Object): An object containing the following properties:
-		- `message` (string): The message to be decoded.
-		- `secretKey` (string): The secret key used for decoding.
-* Returns:
-	+ `string`: The decoded message.
+- Parameters:
+  - `options` (Object): An object containing the following properties:
+    - `message` (string): The message to be decoded.
+    - `secretKey` (string): The secret key used for decoding.
+- Returns:
+  - `string`: The decoded message.
 
-Example
--------
+## Example
+
+---
 
 Here's an example of using the toolkit to encode and decode a message:
 
+```sh
 const { encode_message, decode_message } = require('rudal-cipher-toolkit');
 try {
   const message = 'hello world';
@@ -88,11 +97,11 @@ try {
 } catch (error) {
   console.error(error.message);
 }
+```
 
+## Contributing
 
-
-Contributing
-------------
+---
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or create a pull request.
 
@@ -105,7 +114,12 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 5. Push to the branch (`git push origin feature-branch`)
 6. Open a pull request
 
-License
--------
+## License
+
+---
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+```
+
+```
